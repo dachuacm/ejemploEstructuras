@@ -3,15 +3,22 @@
 #include <string.h>
 #define TAM 2
 
+/*
+ 1)Bachata
+ 2)Corridos
+ 3)Salsa
+ 4)Metal
+*/
+
 typedef struct {
-   char nombre[15];
-   char apellido[15];
-   char nom_artistico[15];
+   char nombre[30];
+   char apellido[30];
+   char nom_artistico[30];
    
 }Interprete;
 
 typedef struct {
-   char nombre[15];
+   char titulo[30];
    Interprete cantante;
    int genero;
    float duracion;
@@ -19,3 +26,4 @@ typedef struct {
 
 void agregarCancion(Cancion favoritas[],int i);
 void imprimir(Cancion lista[]);
+void limpiarBuffer();
