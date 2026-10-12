@@ -28,4 +28,4 @@ void agregarCancion(Cancion favoritas[],int i);
 void imprimir(Cancion lista[]);
 void limpiarBuffer();
 void modificar_cancion(Cancion *c);
-void cambiar_cantante();
+void cambiar_cantante_ptr();

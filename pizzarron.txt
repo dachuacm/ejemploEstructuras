@@ -5,3 +5,6 @@ lista[i]    (lista+i)->genero -1
 generos[lista[i].genero-1]
 
 generos + ((lista+i)->genero -1)
+
+
+//((tam[0]+tam[1])%4)

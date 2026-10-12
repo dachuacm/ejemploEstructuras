@@ -83,7 +83,7 @@ void imprimir_apuntador(Cancion *lista){
 
 
 
-void modificar_cancion( Cancion *cancion){
+void modificar_cancion_ptr( Cancion *cancion){
     int entrada, tam[4]={sizeof(cancion->titulo),sizeof(Interprete),sizeof(int),sizeof(double)};
     void *ptr;
     ptr=cancion;
@@ -94,13 +94,13 @@ void modificar_cancion( Cancion *cancion){
     scanf("%d",&entrada);
 
     switch(entrada){
-        case 1: scanf("%s",(char *)ptr);
+        case 1: scanf("%s",ptr);
                 break;
         case 2: cambiar_cantante();
                break;
-        case 3: scanf("%d",(ptr+tam[0]+tam[1]+((tam[0]+tam[1])%4)));
+        case 3: scanf("%d",ptr+tam[0]+tam[1]);
                 break;
-        case 4: scanf("%lf",(double *)(ptr+tam[0]+tam[1]));
+        case 4: scanf("%lf",ptr+tam[0]+tam[1]);
                 break;
     }
 

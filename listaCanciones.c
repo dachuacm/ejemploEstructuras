@@ -21,7 +21,7 @@ Cancion misfavoritas[TAM],cancion;
     strcpy(cancion.cantante.apellido,"Salas");
     strcpy(cancion.cantante.nom_artistico,"algo");
   
-    modificar_cancion(&cancion);
+    modificar_cancion_ptr(&cancion);
 
     imprimir(&cancion);
 }
