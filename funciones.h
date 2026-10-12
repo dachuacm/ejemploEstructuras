@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define TAM 2
+#define TAM 1
 
 /*
  1)Bachata
@@ -27,3 +27,5 @@ typedef struct {
 void agregarCancion(Cancion favoritas[],int i);
 void imprimir(Cancion lista[]);
 void limpiarBuffer();
+void modificar_cancion(Cancion *c);
+void cambiar_cantante();

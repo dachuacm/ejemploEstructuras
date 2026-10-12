@@ -3,6 +3,7 @@
 
 void ejemplo19();
 void ejemplo20();
+void ejemplo_apt_estructuras();
 
 void imprimeArrUni(int *,int );
 
@@ -44,7 +45,8 @@ void main(){
   printf("*ap_num:%d ",*ap_num); 
 */
 //ejemplo19();
-  ejemplo20();  
+ // ejemplo20();
+ ejemplo_apt_estructuras(); 
 }
 
 void ejemplo19(){
@@ -76,12 +78,19 @@ void imprimeArrUni(int *num, int tot)
 void ejemplo_apt_estructuras(){
 
   Interprete mi_idolo, *ptr_interprete;
+  Cancion cancion;
+  char *ptr_letra;
   
   strcpy(mi_idolo.nombre,"Tini");
 
+  strcpy(mi_idolo.apellido,"Stoessel");
+
   ptr_interprete=&mi_idolo;
 
-  ptr_interprete->apellido;
+  cancion.cantante=mi_idolo;
+  cancion.duracion=2.36;
+  cancion.genero=2;
+  strcpy(cancion.titulo,"Mienteme");
 
-
+  modificar_cancion(&cancion);
 }
