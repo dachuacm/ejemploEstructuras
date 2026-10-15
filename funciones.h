@@ -18,7 +18,7 @@ typedef struct {
 }Interprete;
 
 typedef struct {
-   char titulo[30];
+   char titulo[15];
    Interprete cantante;
    int genero;
    float duracion;
@@ -27,5 +27,5 @@ typedef struct {
 void agregarCancion(Cancion favoritas[],int i);
 void imprimir(Cancion lista[]);
 void limpiarBuffer();
-void modificar_cancion(Cancion *c);
-void cambiar_cantante_ptr();
+void modificar_cancion_ptr(Cancion *c);
+void cambiar_cantante();
